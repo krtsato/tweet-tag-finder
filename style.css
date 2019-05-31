@@ -1,0 +1,291 @@
+/*** 共通 ***/
+body {
+  margin: 10px 5px 0;
+  padding: 100px 0 50px 0;
+  font-family :'Avenir','Helvetica Neue','Helvetica','Arial','メイリオ', 'Meiryo','ヒラギノ角ゴシック','YuGothic','Yu Gothic','ＭＳ Ｐゴシック','MS PGothic';
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+* html body{
+  overflow: hidden;
+}
+* html div#contentsArea{
+  height: 100%;
+  overflow: auto;
+}
+h1 {
+  background-color: #4BA4D8;
+  padding: 2px 0 1px 40px;
+  border-radius: 2px;
+  font-weight: 550;
+}
+.form-wrapper {
+  text-align: center;
+  padding: 0.5em 1em;
+  margin: 2em 30%;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: rgba(207, 219, 230, 0.31);
+  border: solid 3px #AEBBC0;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+.form-wrapper input[type="submit"]{
+  font-size: 1em;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.73);
+  padding: 0.1em 0.8em;
+  background: #00D4C2;
+  border-top: solid 3px #04A192;
+  border-bottom: solid 3px #04A192;
+  transition: .4s;
+}
+.form-wrapper input[type="submit"]:hover {
+  text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+}
+div#header {
+  /*font-family :'ＭＳ Ｐゴシック','MS PGothic';*/
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #4BA4D8;
+  color: #fff;
+  z-index: 5;
+  padding: 10px 0 0 10px;
+}
+.appname {
+  font-size: 45px;
+  padding: 2px 0 0 2px;
+}
+
+/*** top.php ***/
+.form-wrapper h2 {
+  margin: 10px 0;
+  background-color: #4BA4D8;
+}
+p#signup-comment {
+  margin: 0;
+}
+input[name="name"] {
+  width: 80%;
+  margin: 50px 0 0;
+  font-size: 20px;
+}
+input[name="pass"] {
+  width: 80%;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.radios input[type="radio"] {
+  display: none;
+}
+.radios label {
+  margin: 10px;
+  display: inline-block;
+  color: #fff;
+  background-color: #B8BBBE;
+  padding: 5px 10px;
+}
+.radios input[type="radio"]:checked + label {
+  background-color: #5BAEDF;
+}
+
+
+/*** mypage.php ***/
+.fa-button{
+  color:#fff;
+}
+.search_button{
+  background: #00D4C2;
+}
+.search_button:hover {
+  text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+}
+.fa-favo_button{
+  color:#E4DC09;
+}
+.favorite_button{
+  padding-top: 10px;
+  border-style: none;
+  background-color: #F0F4F7;
+}
+#youkoso {
+  font-size: 20px;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+#signout {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+}
+
+#signout button[type="submit"] {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FAFAFA;
+  background: #A7B0B3;
+  border-radius: 0 15px 15px 0;
+  transition: .4s;
+}
+
+#signout input[type="submit"]:hover {
+  background: #5A5D5E;
+}
+#menu {
+  margin: 0;
+  position: relative;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+}
+#menu li {
+  width: 110px;
+  text-align: center;
+  padding: 4px 0px;
+  margin: 2px 18px 0 0;
+  background-color: #87B8D4;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+#menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+#menu li :hover {
+  border-bottom: dotted 3px #0051FF;
+  color: #DDE6E7;
+}
+
+input[name="keyword"] {
+  width: 50%;
+  font-size: 20px;
+}
+.tweet {
+  text-align: center;
+  padding: 10px 0 0 10px;
+  margin: 0 25%;
+}
+.tweet-username {
+  text-align: left;
+  background-color: #D8DFE2;
+  padding-left: 10px;
+  margin-top: 20px;
+  border-top: solid 2px #5989cf;
+  border-radius: 2px;
+}
+.tweet-time {
+  font-size: 12px;
+  margin: 1em;
+}
+.tweet-text {
+  text-align: left;
+  padding: 10px 10px 7px 10px;;
+  background-color: #F0F4F7;
+  margin-bottom: 20px;
+  border-bottom: solid 2px #5989cf;
+  border-radius: 3px;
+}
+.star:before{
+  color: #F1EF42 ;
+  font-size: 100px ;
+}
+.favorite-submit{
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  padding-left:1px;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  color: #b9b4b2;
+  font-size: 25px;
+  text-shadow: 0px 1px 0px #fafafa;
+  background: #e4e3e2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#d3cecd));
+  background: -moz-linear-gradient(top,  #eaeaea,  #d3cecd);
+  background: -o-linear-gradient(top,  #eaeaea,  #d3cecd);
+  background: -ms-linear-gradient(top,  #eaeaea,  #d3cecd);
+  background: linear-gradient(top,  #eaeaea,  #d3cecd);
+  border: 1px solid #dcd9d8;
+  border-bottom: 1px solid #c1c1bd;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
+  -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
+  box-shadow: inset 0 2px 1px rgba(255,255,255,0.6), 0 0 1px #c7c5c1;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+.favorite-submit:hover{
+  background: #eaeaea;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#e4e3e2));
+  background: -moz-linear-gradient(top,  #eaeaea,  #e4e3e2);
+  background: -o-linear-gradient(top,  #eaeaea,  #e4e3e2);
+  background: -ms-linear-gradient(top,  #eaeaea,  #e4e3e2);
+  background: linear-gradient(top,  #eaeaea,  #e4e3e2);
+  -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
+  border-bottom:none;
+}
+.favorite-submit:active{
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 1280px) {
+  .tweet-text > img {
+    width: 46%;
+    margin: 2%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .tweet-text > img {
+    width: 96%;
+    margin: 2%;
+  }
+}
+.form {
+  position: fixed;
+}
+#sidebar {
+  background-color: rgba(210, 210, 210, 0.15);
+  width: 230px;
+  float: left;
+  margin: 0;
+  padding: 10px;
+  /* 時間があったら追加：追従させるデザイン */
+  top: 228px;
+  position: -webkit-sticky;
+  position: sticky !important;
+}
+.tag_mess {
+  font-size: 17px;
+}
+.tag_form {
+  padding: 8px 0 2px 0;
+  margin-left: 3px;
+}
+.tag{
+  text-align: center;
+  background-color:#99D174;
+  margin: 0.1em;
+  color:#fff;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+/* sidebarの指定 */
