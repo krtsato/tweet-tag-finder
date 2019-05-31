@@ -6,5 +6,5 @@
 お気に入りのツイートを管理できます。  
 
 開発期間 : 2週間  
-使用言語 : PHP/JavaScript  
+使用言語 : PHP/JavaScript/CSS
 実行環境 : LAMP
