@@ -4,10 +4,10 @@ if (!isset($_SESSION)) session_start();
 require "twitteroauth/autoload.php";
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-$consumerKey = "5nTKiNGUnfocfoNxx5GgfJ1TO";
-$consumerSecret = "fHREOdEARgrfIOZoczmmvRoHSUsuY8U7POLWq2XWb706zYKZx1";
-$accessToken = "871225294245437440-35QWwt42ptzqoCw3UviJTTKkBCbgOHC";
-$accessTokenSecret = "0ubgaHKMyTzl2S7H3P1npfrDfTaAVRUOeHElZ3LYLTa2G";
+$consumerKey = "sorry, secret.";
+$consumerSecret = "sorry, secret.";
+$accessToken = "sorry, secret.";
+$accessTokenSecret = "sorry, secret.";
 $twitter = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
 
 if (isset($_POST["tag_name"])) {
